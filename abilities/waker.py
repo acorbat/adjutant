@@ -1,5 +1,5 @@
 from wakeonlan import send_magic_packet
-from serialize import load, dump
+from json import load, dump
 
 class Waker(object):
 

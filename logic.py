@@ -1,4 +1,4 @@
-from serialize import load
+from json import load
 
 from abilities.waker import Waker
 
