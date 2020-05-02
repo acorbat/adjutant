@@ -1,6 +1,7 @@
 from wakeonlan import send_magic_packet
 from json import load, dump
 
+
 class Waker(object):
 
     def __init__(self, path):

@@ -18,7 +18,7 @@ class Adjutant(object):
         if text[0] in self.instructions.keys():
             try:
                 return self.instructions[text[0]](*text[1:])
-            except:
+            except Exception as e:
                 return "I could not execute your order"
         else:
             return "I could not understand your order"

@@ -1,6 +1,7 @@
 .idea
 .DS_Store
 *.Thumbs.db
+.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -96,6 +97,3 @@ ENV/
 
 # Rope project settings
 .ropeproject
-
-# Adjutant Memory
-adjutant/
