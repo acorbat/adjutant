@@ -1,10 +1,10 @@
-import pathlib
+import certifi
 import logging
+import pathlib
 from flask import Flask
 from slack import WebClient
 from slackeventsapi import SlackEventAdapter
 import ssl as ssl_lib
-import certifi
 
 from logic import Adjutant
 # from onboarding_tutorial import OnboardingTutorial
