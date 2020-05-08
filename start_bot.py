@@ -16,10 +16,10 @@ from adjutant import Adjutant
 class MockLoad:
     def load(*args):
         return {'SLACK_SIGNING_SECRET': 'SECRET',
-                'SLACK_BOT_TOKEN': 'TOKEN' }
+                'SLACK_BOT_TOKEN': 'TOKEN'}
 
 
-adjutant = Adjutant(pathlib.Path.cwd().joinpath('adjutant'), MockLoad() )
+adjutant = Adjutant(pathlib.Path.cwd().joinpath('adjutant'), MockLoad())
 
 # Initialize a Flask app to host the events adapter
 app = Flask(__name__)
