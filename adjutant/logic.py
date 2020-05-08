@@ -5,8 +5,9 @@ from abilities.waker import Waker
 
 class Adjutant(object):
 
-    def __init__(self, path):
+    def __init__(self, path, loader):
         self.path = path
+        self.loader = loader
         self.memory = self.load_memory()
         self.abilities = {'waker': Waker(path.joinpath('waker_ip_dict.json'))}
         self.instructions = self.load_instructions()
@@ -24,7 +25,7 @@ class Adjutant(object):
             return "I could not understand your order"
 
     def load_memory(self):
-        return load(str(self.path.joinpath('memory.json')))
+        return self.loader.load(str(self.path.joinpath('memory.json')))
 
     def load_instructions(self):
         instructions = {}
