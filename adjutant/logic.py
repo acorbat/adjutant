@@ -1,5 +1,3 @@
-from json import load
-
 from abilities.waker import Waker
 
 
